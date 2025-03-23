@@ -57,12 +57,37 @@ class LRUCache {
         const node = {
             next: this.head,
             prev: null,
+            key,
             value,
         }
 
         this.map.set(key, node);
+        if(this.head !== null){
+         this.head.prev = node;   
+        }
         this.head = node;
+
+        if(this.tail === null){
+            this.tail = node;
+        }
         this.length += 1;
 
     }
+    debug() {
+        let current = this.head;
+        const arr = [];
+        while(current !== null){
+         arr.push(current);
+         current = current.next;   
+        }
+     return arr.reduce((acc, curr) =>acc.concat(`-->[ [${curr.key}]:[${curr.value}] ]-->`), '')
+    }
 }
+
+const cache = new LRUCache(3);
+cache.put(1, 10);
+cache.put(2, 20);
+cache.put(3, 30);
+cache.put(4, 40);
+
+console.log(cache.debug())
