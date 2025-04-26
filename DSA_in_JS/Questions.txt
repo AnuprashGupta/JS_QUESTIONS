@@ -1,0 +1,284 @@
+🔤 String-Based Questions
+Reverse a string.
+
+Check if a string is a palindrome.
+
+Find the first non-repeating character in a string.
+
+Count the number of vowels in a string.
+
+Find the longest substring without repeating characters.
+
+Check if two strings are anagrams.
+
+Convert a string to an integer (implement parseInt).
+
+Capitalize the first letter of each word in a sentence.
+
+Reverse words in a sentence.
+
+Check if a string contains only digits.
+
+Remove all non-alphabetic characters from a string.
+
+Implement String.prototype.trim() without using built-in methods.
+
+Find the longest common prefix in an array of strings.
+
+Check if a string is a valid palindrome after ignoring non-alphanumeric characters.
+
+Implement a function to compress a string (e.g., "aabcccccaaa" → "a2b1c5a3").
+
+Find all permutations of a string.
+
+Replace all spaces in a string with %20.
+
+Implement the indexOf function.
+
+Remove all occurrences of a character from a string.
+
+Implement the substring function.
+
+Count the number of words in a string.
+
+Find the character that appears the most in a string.
+
+Check if a string contains all characters of another string.
+
+Find the longest palindromic substring in a string.
+
+Convert a string to lowercase without using built-in functions.
+
+Find the index of the last occurrence of a substring.
+
+Find the shortest palindrome that can be formed by appending characters to the end of a string.
+
+Replace all vowels in a string with a specified character.
+
+Convert a sentence to title case (first letter of each word capitalized).
+
+Implement a function to rotate a string.
+
+📚 Array-Based Questions
+Find the maximum product of two integers in an array.
+
+Find the two numbers that add up to a target sum.
+
+Check if a given array contains duplicates.
+
+Move all zeros in an array to the end while maintaining the relative order.
+
+Find the intersection of two arrays.
+
+Find the union of two arrays.
+
+Find the missing number in an array from 1 to N.
+
+Find the longest increasing subsequence in an array.
+
+Rotate an array to the right by k steps.
+
+Merge two sorted arrays into one sorted array.
+
+Sort an array without using built-in sorting methods.
+
+Find the median of two sorted arrays.
+
+Remove duplicates from a sorted array.
+
+Find the maximum subarray sum (Kadane’s Algorithm).
+
+Find the pair of elements in an array whose sum is closest to zero.
+
+Find the common elements in three sorted arrays.
+
+Check if a number is a part of a Fibonacci series.
+
+Find the first missing positive integer in an unsorted array.
+
+Implement a function that checks if an array is sorted.
+
+Find the longest consecutive subsequence in an array.
+
+Find the majority element (appears more than n/2 times).
+
+Count the frequency of each element in an array.
+
+Implement a function to merge overlapping intervals.
+
+Find the smallest range that includes at least one element from each of the given arrays.
+
+Implement the Array.prototype.map() method.
+
+Find the number of ways to make change for a given amount using a set of coin denominations.
+
+Remove a given element from an array.
+
+Find the intersection of multiple arrays.
+
+Implement a function to shuffle an array randomly.
+
+Find the common elements in two unsorted arrays.
+
+🧱 Object-Based Questions
+Count the frequency of elements in an array using an object.
+
+Group anagrams together from an array of strings.
+
+Implement a deep clone of an object.
+
+Merge two objects (deep merge).
+
+Check if two objects are deeply equal.
+
+Invert the keys and values of an object.
+
+Flatten a nested object.
+
+Convert an array of objects into a single object grouped by a key.
+
+Find the key(s) with the highest value in an object.
+
+Remove a property from a deeply nested object.
+
+Check if an object is empty.
+
+Merge two arrays of objects based on a common key.
+
+Convert a query string into an object.
+
+Convert an object into a query string.
+
+Implement a function to get all keys from an object.
+
+Create a function that takes an object and returns an array of its values.
+
+Implement a function that counts how many properties an object has.
+
+Create a function that removes a key-value pair from an object.
+
+Implement a deep comparison function for two objects.
+
+Convert an object to a query string, where the keys are property names and the values are property values.
+
+Find the difference between two objects.
+
+Convert an array of objects to a single object with unique keys.
+
+Check if an object has a specific property.
+
+Clone an object by reference and value.
+
+Find the keys in an object that have undefined or null values.
+
+Remove duplicate objects from an array based on a specific key.
+
+Implement an object that behaves like a Set (unique values).
+
+Create an object that behaves like a map, where keys are strings and values are integers.
+
+Sort an array of objects by a key.
+
+Implement a function that counts how many times a property appears in an array of objects.
+
+
+
+🔤 STRING-BASED QUESTIONS (with Input/Output)
+
+No.	Problem	Sample Input	Sample Output
+1	Reverse a string	"hello"	"olleh"
+2	Check palindrome	"racecar"	true
+3	First non-repeating char	"aabbccddeefg"	"f"
+4	Count vowels	"beautiful"	5
+5	Longest substring without repeating chars	"abcabcbb"	"abc"
+6	Check anagram	"listen", "silent"	true
+7	Convert string to integer	"1234"	1234
+8	Capitalize first letter each word	"hello world"	"Hello World"
+9	Reverse words in sentence	"hello world"	"world hello"
+10	Only digits?	"12345"	true
+11	Remove non-alpha chars	"abc123!@#"	"abc"
+12	Implement trim	" hello world "	"hello world"
+13	Longest common prefix	["flower", "flow", "flight"]	"fl"
+14	Palindrome ignoring non-alphanumerics	"A man, a plan, a canal: Panama"	true
+15	String compression	"aabcccccaaa"	"a2b1c5a3"
+16	All permutations of a string	"abc"	["abc", "acb", "bac", "bca", "cab", "cba"]
+17	Replace spaces with %20	"hello world"	"hello%20world"
+18	Implement indexOf	"hello", "l"	2
+19	Remove all occurrences of char	"banana", "a"	"bnn"
+20	Implement substring	"hello", (1,4)	"ell"
+21	Count words	"hello world test"	3
+22	Most frequent character	"abbcccddddeeeee"	"e"
+23	String contains all chars of another	"abcde", "bed"	true
+24	Longest palindromic substring	"babad"	"bab" or "aba"
+25	Lowercase without .toLowerCase()	"Hello"	"hello"
+26	Last occurrence index of substring	"hellohello", "lo"	8
+27	Shortest palindrome by appending	"abcd"	"abcdcba"
+28	Replace vowels with char	"hello", "*"	"h*ll*"
+29	Title case sentence	"this is a test"	"This Is A Test"
+30	Rotate string	"abcdef", 2	"efabcd"
+📚 ARRAY-BASED QUESTIONS (with Input/Output)
+// !----->
+No.	Problem	Sample Input	Sample Output
+1	Max product of two integers	[1, 20, 3, 4]	80
+2	Two numbers add up to target	[2,7,11,15], target=9	[2,7]
+3	Contains duplicates?	[1,2,3,1]	true
+4	Move zeros to end	[0,1,0,3,12]	[1,3,12,0,0]
+5	Intersection of two arrays	[1,2,2,1], [2,2]	[2]
+6	Union of two arrays	[1,2,3], [2,3,4]	[1,2,3,4]
+7	Missing number from 1 to N	[3,0,1]	2
+8	Longest increasing subsequence	[10,9,2,5,3,7,101,18]	4
+9	Rotate array by k steps	[1,2,3,4,5,6,7], k=3	[5,6,7,1,2,3,4]
+10	Merge two sorted arrays	[1,2,4], [1,3,5]	[1,1,2,3,4,5]
+11	Sort array without built-in	[3,1,2]	[1,2,3]
+12	Median of two sorted arrays	[1,3], [2]	2.0
+13	Remove duplicates from sorted	[1,1,2]	[1,2]
+14	Max subarray sum (Kadane's)	[-2,1,-3,4,-1,2,1,-5,4]	6
+15	Pair sum closest to zero	[-8, 4, 5, -10, 3]	[-10, 10]
+16	Common elements in 3 arrays	[1,2,3], [2,3,4], [2,3,5]	[2,3]
+17	Part of Fibonacci?	21	true
+18	First missing positive	[3,4,-1,1]	2
+19	Check array sorted	[1,2,3,4]	true
+20	Longest consecutive subsequence	[100,4,200,1,3,2]	4
+21	Majority element	[3,3,4]	3
+22	Frequency count of elements	[1,1,2,2,2,3]	{1:2, 2:3, 3:1}
+23	Merge overlapping intervals	[[1,3],[2,6],[8,10],[15,18]]	[[1,6],[8,10],[15,18]]
+24	Smallest range including one element from each array	[[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]	[20,24]
+25	Implement map	[1,2,3], (x) => x*2	[2,4,6]
+26	Ways to make change	amount=5, coins=[1,2,5]	4
+27	Remove given element	[3,2,2,3], val=3	[2,2]
+28	Intersection of multiple arrays	[[1,2,3],[2,3,4],[2,5,3]]	[2,3]
+29	Shuffle array randomly	[1,2,3,4]	[3,1,4,2] (random)
+30	Common elements in two unsorted arrays	[4,5,6,7], [5,7,8,9]	[5,7]
+🧱 OBJECT-BASED QUESTIONS (with Input/Output)
+
+No.	Problem	Sample Input	Sample Output
+1	Frequency count using object	[1,2,2,3]	{1:1, 2:2, 3:1}
+2	Group anagrams	["bat","tab","cat"]	[["bat","tab"],["cat"]]
+3	Deep clone object	{a:{b:1}}	{a:{b:1}} (separate memory)
+4	Merge two objects (deep)	{a:1}, {b:2}	{a:1, b:2}
+5	Deep compare two objects	{a:1}, {a:1}	true
+6	Invert object keys/values	{a:1, b:2}	{1:"a",2:"b"}
+7	Flatten nested object	{a:{b:2}}	{"a.b":2}
+8	Group by key	[{type:"fruit",name:"apple"},{type:"fruit",name:"banana"}]	{fruit:[{...},{...}]}
+9	Key with highest value	{a:1, b:3, c:2}	"b"
+10	Remove nested property	{a:{b:{c:1}}}	After removing c → {a:{b:{}}}
+11	Check empty object	{}	true
+12	Merge two array of objects by key	[{"id":1}], [{"id":1,"name":"John"}]	[{"id":1,"name":"John"}]
+13	Query string to object	"name=John&age=30"	{name:"John", age:"30"}
+14	Object to query string	{name:"John", age:30}	"name=John&age=30"
+15	Get all keys	{a:1,b:2}	["a","b"]
+16	Get all values	{a:1,b:2}	[1,2]
+17	Count number of properties	{a:1,b:2,c:3}	3
+18	Remove key-value pair	{a:1,b:2} remove a	{b:2}
+19	Deep object comparison	{a:{b:1}}, {a:{b:1}}	true
+20	Object to key-value pairs	{a:1,b:2}	[["a",1],["b",2]]
+21	Difference between two objects	{a:1,b:2}, {a:1,b:3}	{b:[2,3]}
+22	Array of objects to object (unique keys)	[{id:1,name:"A"},{id:2,name:"B"}]	{1:{...}, 2:{...}}
+23	Check if object has property	{a:1} check a	true
+24	Clone by reference/value	{a:1}	Clone (separate memory)
+25	Keys with undefined/null	{a:null,b:2,c:undefined}	[a,c]
+26	Remove duplicate objects based on key	[{id:1},{id:1}]	[{id:1}]
+27	Object behaving like Set	Add only unique values	
+28	Map-like object (key string → int)	{"a":1,"b":2}	
+29	Sort array of objects by key	[{"age":30},{"age":20}]	[{"age":20},{"age":30}]
+30	Property count in array of objects	[{type:"fruit"},{type:"veg"},{type:"fruit"}]	{fruit:2, veg:1}
